@@ -1,6 +1,8 @@
-FROM rabbitmq
+FROM rabbitmq:3-management
 
-MAINTAINER Riaan van den Dool <rvddool@csir.co.za>
+MAINTAINER rvddool@csir.co.za
+
+ADD rabbitmq.config.default /etc/rabbitmq/rabbitmq.config
 
 RUN rabbitmq-plugins enable rabbitmq_web_stomp
 

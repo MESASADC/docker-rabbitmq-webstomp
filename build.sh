@@ -2,4 +2,4 @@
 
 set -e
 
-docker build --rm -t mesasadc/rabbitmq-webstomp .
+docker build -t mesasadc/rabbitmq-webstomp:local .
